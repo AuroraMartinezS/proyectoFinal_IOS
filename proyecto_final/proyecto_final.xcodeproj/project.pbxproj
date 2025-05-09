@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FB466D8D2DCBC6B300E46A69 /* criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB466D8C2DCBC6B300E46A69 /* criatura.swift */; };
+		FBBEFB262DCE56CB00F7CAF2 /* soporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */; };
+		FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */; };
+		FBBEFB2F2DCE5A9D00F7CAF2 /* pantalla_criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */; };
+		FBBEFB312DCE651500F7CAF2 /* pantalla_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB302DCE651500F7CAF2 /* pantalla_principal.swift */; };
 		FBFB98992DCBB1BA00F03488 /* proyecto_finalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB98982DCBB1BA00F03488 /* proyecto_finalApp.swift */; };
 		FBFB989B2DCBB1BA00F03488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB989A2DCBB1BA00F03488 /* ContentView.swift */; };
 		FBFB989D2DCBB1BB00F03488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFB989C2DCBB1BB00F03488 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		FB466D8C2DCBC6B300E46A69 /* criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criatura.swift; sourceTree = "<group>"; };
+		FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soporte.swift; sourceTree = "<group>"; };
+		FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_Nav.swift; sourceTree = "<group>"; };
+		FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_criatura.swift; sourceTree = "<group>"; };
+		FBBEFB302DCE651500F7CAF2 /* pantalla_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_principal.swift; sourceTree = "<group>"; };
 		FBFB98952DCBB1BA00F03488 /* proyecto_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFB98982DCBB1BA00F03488 /* proyecto_finalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyecto_finalApp.swift; sourceTree = "<group>"; };
 		FBFB989A2DCBB1BA00F03488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,8 +52,35 @@
 			isa = PBXGroup;
 			children = (
 				FB466D8C2DCBC6B300E46A69 /* criatura.swift */,
+				FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */,
 			);
 			path = modelos;
+			sourceTree = "<group>";
+		};
+		FBBEFB272DCE588500F7CAF2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FBBEFB292DCE58FA00F7CAF2 /* BOTW_pantallas */,
+				FBBEFB282DCE58E700F7CAF2 /* menu_nav */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FBBEFB282DCE58E700F7CAF2 /* menu_nav */ = {
+			isa = PBXGroup;
+			children = (
+				FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */,
+			);
+			path = menu_nav;
+			sourceTree = "<group>";
+		};
+		FBBEFB292DCE58FA00F7CAF2 /* BOTW_pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */,
+				FBBEFB302DCE651500F7CAF2 /* pantalla_principal.swift */,
+			);
+			path = BOTW_pantallas;
 			sourceTree = "<group>";
 		};
 		FBFB988C2DCBB1BA00F03488 = {
@@ -67,6 +102,7 @@
 		FBFB98972DCBB1BA00F03488 /* proyecto_final */ = {
 			isa = PBXGroup;
 			children = (
+				FBBEFB272DCE588500F7CAF2 /* UI */,
 				FB466D8B2DCBC6A500E46A69 /* modelos */,
 				FBFB98AB2DCBBDB200F03488 /* controladores */,
 				FBFB98A62DCBB7B300F03488 /* API */,
@@ -174,11 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBFB98A82DCBB7EF00F03488 /* errores.swift in Sources */,
+				FBBEFB312DCE651500F7CAF2 /* pantalla_principal.swift in Sources */,
 				FBFB98AD2DCBC26600F03488 /* controlador_app.swift in Sources */,
 				FBFB989B2DCBB1BA00F03488 /* ContentView.swift in Sources */,
+				FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */,
 				FBFB98AA2DCBBC7900F03488 /* botw_api.swift in Sources */,
 				FB466D8D2DCBC6B300E46A69 /* criatura.swift in Sources */,
 				FBFB98992DCBB1BA00F03488 /* proyecto_finalApp.swift in Sources */,
+				FBBEFB2F2DCE5A9D00F7CAF2 /* pantalla_criatura.swift in Sources */,
+				FBBEFB262DCE56CB00F7CAF2 /* soporte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

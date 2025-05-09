@@ -11,7 +11,7 @@ struct Criatura: Identifiable, Codable{
         let category: String
         let description: String
         let image: String
-        let common_locations: []
+        //let common_locations: Array<String>
         let edible: Bool
-        let drops: []
+        //let drops: Array<String>
 }
