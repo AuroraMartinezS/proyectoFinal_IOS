@@ -26,6 +26,7 @@ class BOTW_Api : Codable {
     
     private func descargar<TipoGenerico: Codable>(recurso: String) async -> TipoGenerico? {
             do {
+               
                 guard let url = URL(string: "\(url_api)\(recurso)") else {throw ErroresDeRed.badUrl}
                 let (datos, respuesta) = try await URLSession.shared.data(from: url)
                 guard let respuesta = respuesta as? HTTPURLResponse else {throw ErroresDeRed.badResponse}
@@ -57,6 +58,7 @@ class BOTW_Api : Codable {
                 print("Implementación o modelo incorrecto")
                 print("en tu Api de Legend of Zelda BOTW")
                 print("")
+                print("\(url_api)\(recurso)")
             }
             catch ErroresDeRed.invalidRequest {
                 print("¿Cómo llegaste aquí?")

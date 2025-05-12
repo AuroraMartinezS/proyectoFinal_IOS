@@ -14,4 +14,6 @@ struct Criatura: Identifiable, Codable{
         //let common_locations: Array<String>
         let edible: Bool
         //let drops: Array<String>
+    
+    
 }

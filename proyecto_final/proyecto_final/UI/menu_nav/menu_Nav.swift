@@ -14,11 +14,10 @@ struct MenuNavegacion: View {
         TabView{
             PantallaPrincipal()
                 .tabItem { Label("Inicio", systemImage: "house.fill") }
-                //.badge(controlador.publicaciones.count)
             
             PantallaCriatura()
                 .tabItem { Label("BOTW", systemImage: "gamecontroller.fill") }
-            Text("Favoritos")
+            Favoritos()
                 .tabItem { Label("Favoritos", systemImage:"heart.fill") }
 
             

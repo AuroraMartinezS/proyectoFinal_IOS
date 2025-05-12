@@ -11,32 +11,46 @@ struct PantallaCriatura: View {
     @Environment(ControladorAplicacion.self) var controlador
     
     var body: some View {
-        //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         if(controlador.pagina_resultados != nil){
-            ScrollView{
-                LazyVStack{
-                    ForEach(controlador.pagina_resultados!.items){ criatura in NavigationLink{
-                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)} label: {
-                            VStack(){
-                                Text("\(criatura.name)")
-                                    .font(.system(size: 25))
-                                    .fontWeight(.bold)
+            NavigationStack{
+                ZStack(){
+                    Image("patronFondo")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(minWidth: 0)
+                        .edgesIgnoringSafeArea(.all)
+                    ScrollView{
+                        
+                        
+                        LazyVStack{
+                            ForEach(controlador.pagina_resultados!.items){ criatura in NavigationLink{PantallaCriaturaIndividual()
+                            } label: {
+                                
+                                VStack(){
+                                    Text("\(criatura.name) y id: \(criatura.id)")
+                                        .font(.system(size: 25))
+                                        .fontWeight(.bold)
+                                        .padding(20)
+                                    AsyncImage(url: URL(string:criatura.image))
+                                    { result in
+                                        result.image?
+                                            .resizable()
+                                            .scaledToFill()
+                                            .aspectRatio(contentMode: .fit)
+                                    }
+                                    .frame(width: 220, height: 220)
                                     .padding(20)
-                                AsyncImage(url: URL(string:criatura.image))
-                                { result in
-                                    result.image?
-                                        .resizable()
-                                        .scaledToFill()
-                                        .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: .infinity)
+                                    .shadow(color: Color.black, radius: 5, x: 0, y: 1)
                                 }
-                                .frame(width: 220, height: 220)
-                                .padding(20)
-                                .frame(maxWidth: .infinity)
-                                .shadow(color: Color.black, radius: 5, x: 0, y: 1)
+                            }
+                            .simultaneousGesture(TapGesture().onEnded({
+                                controlador.descargar_animal_api(id: criatura.id)
+                            }))
                             }
                         }
                     }
-                }
+                } // ESTE PARENTESIIS ES DE ZSTACK
             }
         }
     }

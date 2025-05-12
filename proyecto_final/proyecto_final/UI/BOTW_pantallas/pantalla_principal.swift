@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PantallaPrincipal: View {
     var body: some View {
-        Text("Homepage")
         VStack{
             Text("Hyrule API")
         }

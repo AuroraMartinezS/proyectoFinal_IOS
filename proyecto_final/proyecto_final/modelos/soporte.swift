@@ -10,5 +10,6 @@ struct PaginaResultados: Codable{
     
         enum CodingKeys: String, CodingKey {
         case items = "data"
+        
       }
 }

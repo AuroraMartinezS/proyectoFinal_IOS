@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FB466D8D2DCBC6B300E46A69 /* criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB466D8C2DCBC6B300E46A69 /* criatura.swift */; };
+		FB647A622DD2480D00238C68 /* pantalla_criaturaIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A612DD2480D00238C68 /* pantalla_criaturaIndividual.swift */; };
+		FB647A642DD25D9B00238C68 /* pantalla_monstruo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */; };
+		FB647A662DD25DB600238C68 /* pantalla_monstruoIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */; };
+		FB647A682DD25DC000238C68 /* favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A672DD25DC000238C68 /* favoritos.swift */; };
 		FBBEFB262DCE56CB00F7CAF2 /* soporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */; };
 		FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */; };
 		FBBEFB2F2DCE5A9D00F7CAF2 /* pantalla_criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */; };
@@ -23,6 +27,10 @@
 
 /* Begin PBXFileReference section */
 		FB466D8C2DCBC6B300E46A69 /* criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criatura.swift; sourceTree = "<group>"; };
+		FB647A612DD2480D00238C68 /* pantalla_criaturaIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_criaturaIndividual.swift; sourceTree = "<group>"; };
+		FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_monstruo.swift; sourceTree = "<group>"; };
+		FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_monstruoIndividual.swift; sourceTree = "<group>"; };
+		FB647A672DD25DC000238C68 /* favoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritos.swift; sourceTree = "<group>"; };
 		FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soporte.swift; sourceTree = "<group>"; };
 		FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_Nav.swift; sourceTree = "<group>"; };
 		FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_criatura.swift; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 			children = (
 				FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */,
 				FBBEFB302DCE651500F7CAF2 /* pantalla_principal.swift */,
+				FB647A612DD2480D00238C68 /* pantalla_criaturaIndividual.swift */,
+				FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */,
+				FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */,
+				FB647A672DD25DC000238C68 /* favoritos.swift */,
 			);
 			path = BOTW_pantallas;
 			sourceTree = "<group>";
@@ -212,13 +224,17 @@
 				FBFB98A82DCBB7EF00F03488 /* errores.swift in Sources */,
 				FBBEFB312DCE651500F7CAF2 /* pantalla_principal.swift in Sources */,
 				FBFB98AD2DCBC26600F03488 /* controlador_app.swift in Sources */,
+				FB647A682DD25DC000238C68 /* favoritos.swift in Sources */,
 				FBFB989B2DCBB1BA00F03488 /* ContentView.swift in Sources */,
+				FB647A622DD2480D00238C68 /* pantalla_criaturaIndividual.swift in Sources */,
 				FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */,
 				FBFB98AA2DCBBC7900F03488 /* botw_api.swift in Sources */,
 				FB466D8D2DCBC6B300E46A69 /* criatura.swift in Sources */,
 				FBFB98992DCBB1BA00F03488 /* proyecto_finalApp.swift in Sources */,
+				FB647A642DD25D9B00238C68 /* pantalla_monstruo.swift in Sources */,
 				FBBEFB2F2DCE5A9D00F7CAF2 /* pantalla_criatura.swift in Sources */,
 				FBBEFB262DCE56CB00F7CAF2 /* soporte.swift in Sources */,
+				FB647A662DD25DB600238C68 /* pantalla_monstruoIndividual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
