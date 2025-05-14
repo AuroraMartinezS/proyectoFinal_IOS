@@ -11,6 +11,6 @@ struct Monstruo: Identifiable, Codable{
         let category: String
         let description: String
         let image: String
-        //let common_locations: Array<String>
-        //let drops: Array<String>
+        let common_locations: [String]?
+        let drops: [String]?
 }
