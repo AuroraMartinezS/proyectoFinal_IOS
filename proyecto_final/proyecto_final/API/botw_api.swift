@@ -19,10 +19,10 @@ class BOTW_Api : Codable {
     
     //CRIATURA (INDIVIDUAL)
     
-   /* func descargar_criatura_individual(id: Int) async -> Criatura?{
-        let ubicacion_criatura_individual = "/entry/\(id)"
-        return await descargar(recurso: ubicacion_criatura_individual)
-    }*/
+    /* func descargar_criatura_individual(id: Int) async -> Criatura?{
+     let ubicacion_criatura_individual = "/entry/\(id)"
+     return await descargar(recurso: ubicacion_criatura_individual)
+     }*/
     
     //PRUEBA PARA VER SI SALE ANIMAL INDIVIDUAL
     func descargar_criatura_individual(id: Int) async -> DatosCriatura?{
@@ -35,6 +35,12 @@ class BOTW_Api : Codable {
     func descargar_pagina_monstruo() async -> PaginaResultadosMonstruos?{
         let ubicacion_monstruo = "/category/monsters"
         return await descargar(recurso: ubicacion_monstruo)
+    }
+    
+    //PRUEBA PARA VER SI SALE MONSTRUO INDIVIDUAL
+    func descargar_monstruo_individual(id: Int) async -> DatosMonstruo?{
+        let ubicacion_monstruo_individual = "/entry/\(id)"
+        return await descargar(recurso: ubicacion_monstruo_individual)
     }
     
     private func descargar<TipoGenerico: Codable>(recurso: String) async -> TipoGenerico? {

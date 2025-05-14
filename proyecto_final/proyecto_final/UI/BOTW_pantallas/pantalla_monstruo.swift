@@ -43,9 +43,9 @@ struct PantallaMonstruo: View {
                                     .shadow(color: Color.black, radius: 5, x: 0, y: 1)
                                 }
                             }
-                            /*.simultaneousGesture(TapGesture().onEnded({
-                                controlador.descargar_animal_api(id: criatura.id)
-                            }))*/
+                            .simultaneousGesture(TapGesture().onEnded({
+                                controlador.descargar_monstruo_api(id: monstruo.id)
+                            }))
                             }
                         }
                     }

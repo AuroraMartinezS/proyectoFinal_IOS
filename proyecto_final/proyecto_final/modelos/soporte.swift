@@ -14,6 +14,9 @@ struct PaginaResultadosMonstruos: Codable{
 }
 
 struct DatosCriatura: Codable{
-    let data : [Criatura]
+    let data : Criatura
 }
 
+struct DatosMonstruo: Codable{
+    let data : Monstruo
+}

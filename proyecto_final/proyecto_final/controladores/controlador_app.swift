@@ -19,6 +19,7 @@ public class ControladorAplicacion{
     
     //var criatura_animal: Criatura? = nil
     var criatura_animal: DatosCriatura? = nil
+    var monstruo_individual : DatosMonstruo? = nil
     
     init(){
             Task.detached(priority: .high){
@@ -64,6 +65,19 @@ public class ControladorAplicacion{
         self.pagina_resultados_monstruos = pagina_descargada_monstruos
         
         monstruos = pagina_descargada_monstruos.data
+    }
+    
+    //DESCARGAR MONSTRUOS INDIVIDUAL
+    func descargar_monstruoBOTW_individual(id: Int) async {
+        guard let monstruo: DatosMonstruo = try? await BOTW_Api().descargar_monstruo_individual(id: id) else {return}
+        self.monstruo_individual = monstruo
+    }
+    
+    
+    func descargar_monstruo_api(id: Int) {
+        Task.detached(operation: {
+            await self.descargar_monstruoBOTW_individual(id: id)
+        })
     }
     
 }

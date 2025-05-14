@@ -19,12 +19,12 @@ struct PantallaCriaturaIndividual: View {
                 .edgesIgnoringSafeArea(.all)
             ScrollView(){
                 VStack(){
-                    Text("\(controlador.criatura_animal?.data ?? "Nombre del Animal")" )
+                    Text("\(controlador.criatura_animal?.data.name ?? "Nombre del Animal")" )
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .padding(10)
                         .foregroundStyle(Color.teal)
-                    AsyncImage(url: URL(string:controlador.criatura_animal?.image ?? "Imagen"))
+                    AsyncImage(url: URL(string:controlador.criatura_animal?.data.image ?? "Imagen"))
                         { result in
                          result.image?
                                .resizable()
@@ -33,11 +33,11 @@ struct PantallaCriaturaIndividual: View {
                                     }.frame(width: 220, height: 220)
                                     .padding(10)
                                     .shadow(color: Color("newPrimaryColor"), radius: 5, x: 0, y: 1)
-                    Text("\(controlador.criatura_animal?.description ?? "Descripción")")
+                    Text("\(controlador.criatura_animal?.data.description ?? "Descripción")")
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                         .multilineTextAlignment(.leading)
                                         .font(.system(size: 16))
-                                        .foregroundStyle(Color("newPrimaryColor"))
+                                        .foregroundStyle(Color.teal)
                                         .padding(20)
                                         .lineSpacing(8)
                 }
