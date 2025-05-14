@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct pantalla_monstruoIndividual: View {
+struct PantallaMonstruosIndividual: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    pantalla_monstruoIndividual()
+    PantallaMonstruosIndividual()
 }

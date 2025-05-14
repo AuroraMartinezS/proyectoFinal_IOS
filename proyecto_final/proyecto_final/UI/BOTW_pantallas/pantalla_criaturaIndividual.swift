@@ -19,7 +19,7 @@ struct PantallaCriaturaIndividual: View {
                 .edgesIgnoringSafeArea(.all)
             ScrollView(){
                 VStack(){
-                    Text("\(controlador.criatura_animal?.name ?? "Nombre del Animal")" )
+                    Text("\(controlador.criatura_animal?.data ?? "Nombre del Animal")" )
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .padding(10)

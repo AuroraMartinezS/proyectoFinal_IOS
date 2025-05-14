@@ -12,6 +12,7 @@
 		FB647A642DD25D9B00238C68 /* pantalla_monstruo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */; };
 		FB647A662DD25DB600238C68 /* pantalla_monstruoIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */; };
 		FB647A682DD25DC000238C68 /* favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A672DD25DC000238C68 /* favoritos.swift */; };
+		FB98C4152DD4EBCE009FF568 /* monstruo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98C4142DD4EBCE009FF568 /* monstruo.swift */; };
 		FBBEFB262DCE56CB00F7CAF2 /* soporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */; };
 		FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */; };
 		FBBEFB2F2DCE5A9D00F7CAF2 /* pantalla_criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */; };
@@ -31,6 +32,9 @@
 		FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_monstruo.swift; sourceTree = "<group>"; };
 		FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_monstruoIndividual.swift; sourceTree = "<group>"; };
 		FB647A672DD25DC000238C68 /* favoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritos.swift; sourceTree = "<group>"; };
+		FB98C4142DD4EBCE009FF568 /* monstruo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monstruo.swift; sourceTree = "<group>"; };
+		FB98C4172DD4F73D009FF568 /* The Wild Breath of Zelda.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Wild Breath of Zelda.otf"; path = "../../../../../Downloads/the_wild_breath_of_zelda/The Wild Breath of Zelda.otf"; sourceTree = "<group>"; };
+		FB98C4182DD4FD3E009FF568 /* proyecto-final-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "proyecto-final-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soporte.swift; sourceTree = "<group>"; };
 		FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_Nav.swift; sourceTree = "<group>"; };
 		FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_criatura.swift; sourceTree = "<group>"; };
@@ -61,8 +65,17 @@
 			children = (
 				FB466D8C2DCBC6B300E46A69 /* criatura.swift */,
 				FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */,
+				FB98C4142DD4EBCE009FF568 /* monstruo.swift */,
 			);
 			path = modelos;
+			sourceTree = "<group>";
+		};
+		FB98C4162DD4F6F4009FF568 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FB98C4172DD4F73D009FF568 /* The Wild Breath of Zelda.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FBBEFB272DCE588500F7CAF2 /* UI */ = {
@@ -114,6 +127,8 @@
 		FBFB98972DCBB1BA00F03488 /* proyecto_final */ = {
 			isa = PBXGroup;
 			children = (
+				FB98C4182DD4FD3E009FF568 /* proyecto-final-Info.plist */,
+				FB98C4162DD4F6F4009FF568 /* Fonts */,
 				FBBEFB272DCE588500F7CAF2 /* UI */,
 				FB466D8B2DCBC6A500E46A69 /* modelos */,
 				FBFB98AB2DCBBDB200F03488 /* controladores */,
@@ -226,6 +241,7 @@
 				FBFB98AD2DCBC26600F03488 /* controlador_app.swift in Sources */,
 				FB647A682DD25DC000238C68 /* favoritos.swift in Sources */,
 				FBFB989B2DCBB1BA00F03488 /* ContentView.swift in Sources */,
+				FB98C4152DD4EBCE009FF568 /* monstruo.swift in Sources */,
 				FB647A622DD2480D00238C68 /* pantalla_criaturaIndividual.swift in Sources */,
 				FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */,
 				FBFB98AA2DCBBC7900F03488 /* botw_api.swift in Sources */,
@@ -370,6 +386,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"proyecto_final/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "proyecto-final-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -398,6 +415,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"proyecto_final/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "proyecto-final-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

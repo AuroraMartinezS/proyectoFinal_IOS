@@ -23,7 +23,7 @@ struct PantallaCriatura: View {
                         
                         
                         LazyVStack{
-                            ForEach(controlador.pagina_resultados!.items){ criatura in NavigationLink{PantallaCriaturaIndividual()
+                            ForEach(controlador.pagina_resultados!.data){ criatura in NavigationLink{PantallaCriaturaIndividual()
                             } label: {
                                 
                                 VStack(){

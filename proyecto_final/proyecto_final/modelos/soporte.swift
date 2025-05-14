@@ -5,11 +5,15 @@
 //  Created by alumno on 5/9/25.
 //
 
-struct PaginaResultados: Codable{
-        let items: [Criatura]
-    
-        enum CodingKeys: String, CodingKey {
-        case items = "data"
-        
-      }
+struct PaginaResultadosCriatura: Codable{
+        let data: [Criatura]
 }
+
+struct PaginaResultadosMonstruos: Codable{
+        let data: [Monstruo]
+}
+
+struct DatosCriatura: Codable{
+    let data : [Criatura]
+}
+
