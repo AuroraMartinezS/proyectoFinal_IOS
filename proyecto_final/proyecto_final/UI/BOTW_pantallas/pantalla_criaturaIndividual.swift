@@ -19,8 +19,8 @@ struct PantallaCriaturaIndividual: View {
                 .edgesIgnoringSafeArea(.all)
             ScrollView(){
                 VStack(){
-                    Text("\(controlador.criatura_animal?.data.name ?? "Nombre del Animal")" )
-                        .font(.system(size: 35))
+                    Text("\(controlador.criatura_animal?.data.name ?? "nombre del animal")" )
+                        .font(Font.custom("The Wild Breath of Zelda", size: 40))
                         .fontWeight(.bold)
                         .padding(10)
                         .foregroundStyle(Color.teal)
@@ -33,13 +33,13 @@ struct PantallaCriaturaIndividual: View {
                                     }.frame(width: 220, height: 220)
                                     .padding(10)
                                     .shadow(color: Color("newPrimaryColor"), radius: 5, x: 0, y: 1)
-                    Text("\(controlador.criatura_animal?.data.description ?? "Descripción")")
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .multilineTextAlignment(.leading)
-                                        .font(.system(size: 16))
-                                        .foregroundStyle(Color.teal)
-                                        .padding(20)
-                                        .lineSpacing(8)
+                    Text("\(controlador.criatura_animal?.data.description ?? "Descripción Poppins")")
+                        .font(Font.custom("Poppins-Regular", size: 15))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.leading)
+                        .foregroundStyle(Color.teal)
+                        .padding(20)
+                        .lineSpacing(8)
                 }
             }
         }

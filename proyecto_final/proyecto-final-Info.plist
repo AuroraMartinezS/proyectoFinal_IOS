@@ -3,9 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>ATSApplicationFontsPath</key>
-	<string>.</string>
+	<string>/Fonts</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Italic.ttf</string>
+		<string>Poppins-Bold.ttf</string>
 		<string>The Wild Breath of Zelda.otf</string>
 	</array>
 </dict>

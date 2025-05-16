@@ -18,8 +18,8 @@ struct PantallaMonstruosIndividual: View {
                 .edgesIgnoringSafeArea(.all)
             ScrollView(){
                 VStack(){
-                    Text("\(controlador.monstruo_individual?.data.name ?? "Nombre del Monstruo")" )
-                        .font(.system(size: 35))
+                    Text("\(controlador.monstruo_individual?.data.name ?? "nombre del monstruo")" )
+                        .font(Font.custom("The Wild Breath of Zelda", size: 40))
                         .fontWeight(.bold)
                         .padding(10)
                         .foregroundStyle(Color.teal)
@@ -35,7 +35,7 @@ struct PantallaMonstruosIndividual: View {
                     Text("\(controlador.monstruo_individual?.data.description ?? "Descripción del Monstruo")")
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                         .multilineTextAlignment(.leading)
-                                        .font(.system(size: 16))
+                                        .font(Font.custom("Poppins-Regular", size: 15))
                                         .foregroundStyle(Color.teal)
                                         .padding(20)
                                         .lineSpacing(8)

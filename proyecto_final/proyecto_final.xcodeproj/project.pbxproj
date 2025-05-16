@@ -13,11 +13,11 @@
 		FB647A662DD25DB600238C68 /* pantalla_monstruoIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */; };
 		FB647A682DD25DC000238C68 /* favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A672DD25DC000238C68 /* favoritos.swift */; };
 		FB98C4152DD4EBCE009FF568 /* monstruo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98C4142DD4EBCE009FF568 /* monstruo.swift */; };
-		FB98C41D2DD51B42009FF568 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB98C4192DD51B42009FF568 /* Poppins-Bold.ttf */; };
-		FB98C41E2DD51B42009FF568 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB98C41A2DD51B42009FF568 /* Poppins-Medium.ttf */; };
-		FB98C41F2DD51B42009FF568 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB98C41B2DD51B42009FF568 /* Poppins-Italic.ttf */; };
-		FB98C4202DD51B42009FF568 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB98C41C2DD51B42009FF568 /* Poppins-Regular.ttf */; };
-		FB98C4222DD51B5F009FF568 /* The Wild Breath of Zelda.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB98C4212DD51B5F009FF568 /* The Wild Breath of Zelda.otf */; };
+		FBB28B812DD78FA900236946 /* The Wild Breath of Zelda.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C4212DD51B5F009FF568 /* The Wild Breath of Zelda.otf */; };
+		FBB28B822DD78FA900236946 /* Poppins-Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C4192DD51B42009FF568 /* Poppins-Bold.ttf */; };
+		FBB28B832DD78FA900236946 /* Poppins-Italic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C41B2DD51B42009FF568 /* Poppins-Italic.ttf */; };
+		FBB28B842DD78FA900236946 /* Poppins-Medium.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C41A2DD51B42009FF568 /* Poppins-Medium.ttf */; };
+		FBB28B852DD78FA900236946 /* Poppins-Regular.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C41C2DD51B42009FF568 /* Poppins-Regular.ttf */; };
 		FBBEFB262DCE56CB00F7CAF2 /* soporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB252DCE56CB00F7CAF2 /* soporte.swift */; };
 		FBBEFB2D2DCE593500F7CAF2 /* menu_Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2C2DCE593500F7CAF2 /* menu_Nav.swift */; };
 		FBBEFB2F2DCE5A9D00F7CAF2 /* pantalla_criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEFB2E2DCE5A9D00F7CAF2 /* pantalla_criatura.swift */; };
@@ -30,6 +30,23 @@
 		FBFB98AA2DCBBC7900F03488 /* botw_api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB98A92DCBBC7900F03488 /* botw_api.swift */; };
 		FBFB98AD2DCBC26600F03488 /* controlador_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB98AC2DCBC26600F03488 /* controlador_app.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBB28B802DD78F8800236946 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				FBB28B812DD78FA900236946 /* The Wild Breath of Zelda.otf in CopyFiles */,
+				FBB28B822DD78FA900236946 /* Poppins-Bold.ttf in CopyFiles */,
+				FBB28B832DD78FA900236946 /* Poppins-Italic.ttf in CopyFiles */,
+				FBB28B842DD78FA900236946 /* Poppins-Medium.ttf in CopyFiles */,
+				FBB28B852DD78FA900236946 /* Poppins-Regular.ttf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FB466D8C2DCBC6B300E46A69 /* criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criatura.swift; sourceTree = "<group>"; };
@@ -189,6 +206,7 @@
 				FBFB98912DCBB1BA00F03488 /* Sources */,
 				FBFB98922DCBB1BA00F03488 /* Frameworks */,
 				FBFB98932DCBB1BA00F03488 /* Resources */,
+				FBB28B802DD78F8800236946 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -237,12 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB98C4222DD51B5F009FF568 /* The Wild Breath of Zelda.otf in Resources */,
 				FBFB98A02DCBB1BB00F03488 /* Preview Assets.xcassets in Resources */,
-				FB98C41E2DD51B42009FF568 /* Poppins-Medium.ttf in Resources */,
-				FB98C41D2DD51B42009FF568 /* Poppins-Bold.ttf in Resources */,
-				FB98C4202DD51B42009FF568 /* Poppins-Regular.ttf in Resources */,
-				FB98C41F2DD51B42009FF568 /* Poppins-Italic.ttf in Resources */,
 				FBFB989D2DCBB1BB00F03488 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

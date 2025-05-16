@@ -26,10 +26,10 @@ struct PantallaMonstruo: View {
                             } label: {
                                 
                                 VStack(){
-                                    Text("\(monstruo.name) y id: \(monstruo.id)")
-                                        .font(.system(size: 25))
+                                    Text("\(monstruo.name)")
                                         .fontWeight(.bold)
                                         .padding(20)
+                                        .font(Font.custom("The Wild Breath of Zelda", size: 40))
                                     AsyncImage(url: URL(string:monstruo.image))
                                     { result in
                                         result.image?
