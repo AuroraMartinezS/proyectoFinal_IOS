@@ -14,13 +14,8 @@ struct PantallaCriatura: View {
         if(controlador.pagina_resultados != nil){
             NavigationStack{
                 ZStack(){
-                    Image("patronFondo")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(minWidth: 0)
-                        .edgesIgnoringSafeArea(.all)
                     ScrollView{
-                        HStack(){
+                        VStack(){
                             Text("CRIATURAS")
                             .font(Font.custom("The Wild Breath of Zelda", size:45))
                             .foregroundStyle(Color("ColorCrema"))
@@ -39,7 +34,7 @@ struct PantallaCriatura: View {
                                             .aspectRatio(contentMode: .fit)
                                             .cornerRadius(5)
                                     }
-                                    .frame(width: 130, height: 130)
+                                    .frame(width: 120, height: 120)
                                     .shadow(color: Color.black, radius: 5, x: 0, y: 1)
                                     .padding(10)
                                     
@@ -54,13 +49,17 @@ struct PantallaCriatura: View {
                                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                                             
                                     }
-                                   
                                     .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .leading)
+                                    
+                                    Image(systemName: "chevron.right")
+                                        .padding(15)
+                                        .foregroundStyle(Color("ColorOscuro"))
+                                        .font(.title2)
 
                                 } //DEL HSTACK
                                 .padding(1)
                                 .background(Color("ColorCremaoscuro"))
-                                .cornerRadius(10)
+                                .cornerRadius(5)
                                 
                                 
                             }

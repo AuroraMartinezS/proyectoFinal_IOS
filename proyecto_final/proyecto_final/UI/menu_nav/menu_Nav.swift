@@ -16,9 +16,13 @@ struct MenuNavegacion: View {
                 .tabItem { Label("Inicio", systemImage: "house.fill") }
             
             PantallaCriatura()
-                .tabItem { Label("BOTW", systemImage: "gamecontroller.fill") }
+                .tabItem { Label("Criaturas", systemImage: "hare.fill") }
+            
+            PantallaMonstruo()
+                .tabItem { Label("Monstruos", systemImage: "flame.fill") }
+            
             Favoritos()
-                .tabItem { Label("Favoritos", systemImage:"heart.fill") }
+                .tabItem { Label("Materiales", systemImage:"apple.meditate") }
 
             
         }

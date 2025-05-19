@@ -12,11 +12,11 @@ struct PantallaCriaturaIndividual: View {
     
     var body: some View {
         ZStack(){
-            Image("patronFondoIndividual")
+           /* Image("patronFondoIndividual")
                 .resizable()
                 .scaledToFill()
                 .frame(minWidth: 0)
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)*/
             ScrollView(){
                 VStack(){
                     Text("\(controlador.criatura_animal?.data.name ?? "nombre del animal")" )
@@ -24,22 +24,27 @@ struct PantallaCriaturaIndividual: View {
                         .fontWeight(.bold)
                         .padding(10)
                         .foregroundStyle(Color.teal)
-                    AsyncImage(url: URL(string:controlador.criatura_animal?.data.image ?? "Imagen"))
-                        { result in
-                         result.image?
-                               .resizable()
-                               .scaledToFill()
-                              .aspectRatio(contentMode: .fit)
-                                    }.frame(width: 220, height: 220)
-                                    .padding(10)
-                                    .shadow(color: Color("newPrimaryColor"), radius: 5, x: 0, y: 1)
-                    Text("\(controlador.criatura_animal?.data.description ?? "Descripción Poppins")")
-                        .font(Font.custom("Poppins-Regular", size: 15))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .multilineTextAlignment(.leading)
-                        .foregroundStyle(Color.teal)
-                        .padding(20)
-                        .lineSpacing(8)
+                    
+                    VStack(){
+                        
+                        AsyncImage(url: URL(string:controlador.criatura_animal?.data.image ?? "Imagen"))
+                            { result in
+                             result.image?
+                                   .resizable()
+                                   .scaledToFill()
+                                  .aspectRatio(contentMode: .fit)
+                                        }.frame(width: 220, height: 220)
+                                        .padding(10)
+                                        .shadow(color: Color("newPrimaryColor"), radius: 5, x: 0, y: 1)
+                        Text("\(controlador.criatura_animal?.data.description ?? "Descripción Poppins")")
+                            .font(Font.custom("Poppins-Regular", size: 15))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(Color.teal)
+                            .padding(20)
+                            .lineSpacing(8)
+                        
+                    }
                 }
             }
         }

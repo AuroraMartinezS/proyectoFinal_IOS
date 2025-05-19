@@ -20,7 +20,15 @@ struct PantallaMonstruo: View {
                         .frame(minWidth: 0)
                         .edgesIgnoringSafeArea(.all)
                     ScrollView{
+                        
+                        VStack(){
+                            Text("MONSTRUOS")
+                            .font(Font.custom("The Wild Breath of Zelda", size:45))
+                            .foregroundStyle(Color("ColorCrema"))
+                        }
 
+
+                        
                         LazyVStack{
                             ForEach(controlador.pagina_resultados_monstruos!.data){ monstruo in NavigationLink{PantallaMonstruosIndividual()
                             } label: {
