@@ -21,10 +21,6 @@ struct MenuNavegacion: View {
             PantallaMonstruo()
                 .tabItem { Label("Monstruos", systemImage: "flame.fill") }
             
-            Favoritos()
-                .tabItem { Label("Materiales", systemImage:"apple.meditate") }
-
-            
         }
     }
 }

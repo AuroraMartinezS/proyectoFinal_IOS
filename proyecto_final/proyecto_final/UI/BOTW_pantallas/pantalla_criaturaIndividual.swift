@@ -12,20 +12,41 @@ struct PantallaCriaturaIndividual: View {
     
     var body: some View {
         ZStack(){
-           /* Image("patronFondoIndividual")
-                .resizable()
-                .scaledToFill()
-                .frame(minWidth: 0)
-                .edgesIgnoringSafeArea(.all)*/
+
             ScrollView(){
                 VStack(){
-                    Text("\(controlador.criatura_animal?.data.name ?? "nombre del animal")" )
-                        .font(Font.custom("The Wild Breath of Zelda", size: 40))
-                        .fontWeight(.bold)
-                        .padding(10)
-                        .foregroundStyle(Color.teal)
+                    
+                    HStack(){
+                        Divider()
+                            .frame(width: 15, height: 2)
+                            .background(Color.black) // or:
+                            .border(Color("ColorDorado"), width: 2)
+
+                        Text("\(controlador.criatura_animal?.data.name ?? "nombre del animal")" )
+                        .textCase(.uppercase)
+                        .font(Font.custom("The Wild Breath of Zelda", size:30))
+                        .foregroundStyle(Color("ColorDorado"))
+                        
+                        Divider()
+                            .frame(width: 15, height: 2)
+                            .border(Color("ColorDorado"), width: 2)
+
+                    }
                     
                     VStack(){
+                        
+                        HStack(){
+                            Image("trifuerza")
+                                .resizable()
+                                .scaledToFill()
+                               .aspectRatio(contentMode: .fit)
+                               .frame(width: 30, height: 30)
+                            Text("\(controlador.criatura_animal?.data.category ?? "Categoria")")
+                                .font(Font.custom("Poppins-Regular", size: 15))
+                                .bold()
+                            
+
+                        }
                         
                         AsyncImage(url: URL(string:controlador.criatura_animal?.data.image ?? "Imagen"))
                             { result in
@@ -46,6 +67,7 @@ struct PantallaCriaturaIndividual: View {
                         
                     }
                 }
+                .background(Color("ColorAzulAnimal"))
             }
         }
     }

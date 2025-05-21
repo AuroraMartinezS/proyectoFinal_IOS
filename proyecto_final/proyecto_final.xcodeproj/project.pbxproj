@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB4149C82DDE2A6F00117870 /* Makar_from_Wind_Waker_-_The_Legend_Of_Zelda.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB4149C72DDE2A6F00117870 /* Makar_from_Wind_Waker_-_The_Legend_Of_Zelda.usdz */; };
 		FB466D8D2DCBC6B300E46A69 /* criatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB466D8C2DCBC6B300E46A69 /* criatura.swift */; };
 		FB647A622DD2480D00238C68 /* pantalla_criaturaIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A612DD2480D00238C68 /* pantalla_criaturaIndividual.swift */; };
 		FB647A642DD25D9B00238C68 /* pantalla_monstruo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */; };
 		FB647A662DD25DB600238C68 /* pantalla_monstruoIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */; };
-		FB647A682DD25DC000238C68 /* favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB647A672DD25DC000238C68 /* favoritos.swift */; };
 		FB98C4152DD4EBCE009FF568 /* monstruo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98C4142DD4EBCE009FF568 /* monstruo.swift */; };
 		FBB28B812DD78FA900236946 /* The Wild Breath of Zelda.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C4212DD51B5F009FF568 /* The Wild Breath of Zelda.otf */; };
 		FBB28B822DD78FA900236946 /* Poppins-Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB98C4192DD51B42009FF568 /* Poppins-Bold.ttf */; };
@@ -49,11 +49,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB4149C72DDE2A6F00117870 /* Makar_from_Wind_Waker_-_The_Legend_Of_Zelda.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Makar_from_Wind_Waker_-_The_Legend_Of_Zelda.usdz"; sourceTree = "<group>"; };
 		FB466D8C2DCBC6B300E46A69 /* criatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = criatura.swift; sourceTree = "<group>"; };
 		FB647A612DD2480D00238C68 /* pantalla_criaturaIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_criaturaIndividual.swift; sourceTree = "<group>"; };
 		FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_monstruo.swift; sourceTree = "<group>"; };
 		FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantalla_monstruoIndividual.swift; sourceTree = "<group>"; };
-		FB647A672DD25DC000238C68 /* favoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritos.swift; sourceTree = "<group>"; };
 		FB98C4142DD4EBCE009FF568 /* monstruo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monstruo.swift; sourceTree = "<group>"; };
 		FB98C4182DD4FD3E009FF568 /* proyecto-final-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "proyecto-final-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FB98C4192DD51B42009FF568 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -86,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB4149C92DDE2A8800117870 /* ModeloKorok */ = {
+			isa = PBXGroup;
+			children = (
+				FB4149C72DDE2A6F00117870 /* Makar_from_Wind_Waker_-_The_Legend_Of_Zelda.usdz */,
+			);
+			path = ModeloKorok;
+			sourceTree = "<group>";
+		};
 		FB466D8B2DCBC6A500E46A69 /* modelos */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +141,6 @@
 				FB647A612DD2480D00238C68 /* pantalla_criaturaIndividual.swift */,
 				FB647A632DD25D9B00238C68 /* pantalla_monstruo.swift */,
 				FB647A652DD25DB600238C68 /* pantalla_monstruoIndividual.swift */,
-				FB647A672DD25DC000238C68 /* favoritos.swift */,
 			);
 			path = BOTW_pantallas;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 		FBFB98972DCBB1BA00F03488 /* proyecto_final */ = {
 			isa = PBXGroup;
 			children = (
+				FB4149C92DDE2A8800117870 /* ModeloKorok */,
 				FB98C4182DD4FD3E009FF568 /* proyecto-final-Info.plist */,
 				FB98C4162DD4F6F4009FF568 /* Fonts */,
 				FBBEFB272DCE588500F7CAF2 /* UI */,
@@ -257,6 +265,7 @@
 			files = (
 				FBFB98A02DCBB1BB00F03488 /* Preview Assets.xcassets in Resources */,
 				FBFB989D2DCBB1BB00F03488 /* Assets.xcassets in Resources */,
+				FB4149C82DDE2A6F00117870 /* Makar_from_Wind_Waker_-_The_Legend_Of_Zelda.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +279,6 @@
 				FBFB98A82DCBB7EF00F03488 /* errores.swift in Sources */,
 				FBBEFB312DCE651500F7CAF2 /* pantalla_principal.swift in Sources */,
 				FBFB98AD2DCBC26600F03488 /* controlador_app.swift in Sources */,
-				FB647A682DD25DC000238C68 /* favoritos.swift in Sources */,
 				FBFB989B2DCBB1BA00F03488 /* ContentView.swift in Sources */,
 				FB98C4152DD4EBCE009FF568 /* monstruo.swift in Sources */,
 				FB647A622DD2480D00238C68 /* pantalla_criaturaIndividual.swift in Sources */,
