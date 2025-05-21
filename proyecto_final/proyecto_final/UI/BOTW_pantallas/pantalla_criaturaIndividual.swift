@@ -12,7 +12,11 @@ struct PantallaCriaturaIndividual: View {
     
     var body: some View {
         ZStack(){
-
+            Image("patronFondo")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .scaledToFill()
+                .frame(width: .infinity, height: .infinity, alignment:.topLeading)
             ScrollView(){
                 VStack(){
                     
@@ -41,8 +45,9 @@ struct PantallaCriaturaIndividual: View {
                                 .scaledToFill()
                                .aspectRatio(contentMode: .fit)
                                .frame(width: 30, height: 30)
-                            Text("\(controlador.criatura_animal?.data.category ?? "Categoria")")
+                            Text(" \(controlador.criatura_animal?.data.category ?? "Categoria")")
                                 .font(Font.custom("Poppins-Regular", size: 15))
+                                .textCase(.uppercase)
                                 .bold()
                             
 
@@ -66,8 +71,9 @@ struct PantallaCriaturaIndividual: View {
                             .lineSpacing(8)
                         
                     }
+                    .padding(10)
                 }
-                .background(Color("ColorAzulAnimal"))
+                .padding(20)
             }
         }
     }

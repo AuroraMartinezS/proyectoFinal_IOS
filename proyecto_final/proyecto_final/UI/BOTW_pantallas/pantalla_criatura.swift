@@ -78,7 +78,9 @@ struct PantallaCriatura: View {
                                     } //DEL HSTACK
                                     .padding(1)
                                     .cornerRadius(5)
+                                    
                                 } //ZSTACK
+                                
                                 
                             }
                             .padding(10)
@@ -86,8 +88,10 @@ struct PantallaCriatura: View {
                                 controlador.descargar_animal_api(id: criatura.id)
                             }))
                             } .background(Color("ColorCremaclaro"))
+                            .background(Color("ColorCremaoscuro"))
                             .cornerRadius(5)
                         }
+                        
                     }
                 } // ESTE PARENTESIIS ES DE ZSTACK
                 .padding(20)

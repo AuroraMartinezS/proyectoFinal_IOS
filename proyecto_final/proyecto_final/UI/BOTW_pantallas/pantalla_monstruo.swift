@@ -86,7 +86,7 @@ struct PantallaMonstruo: View {
                                 controlador.descargar_monstruo_api(id: monstruo.id)
                             }))
                             }
-                            .background(Color("ColorCremaclaro"))
+                            .background(Color("ColorCremaoscuro"))
                             .cornerRadius(5)
                         }
                     }
