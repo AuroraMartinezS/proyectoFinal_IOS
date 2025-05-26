@@ -37,14 +37,7 @@ public class ControladorAplicacion{
         
         criaturas = pagina_descargada.data
         
-        //await print(BOTW_Api().descargar_pagina_criaturas())
     }
-    
-    //PARA DESCARGAR CRIATURA INDIVIDUAL
-    /*func descargar_animal_individual(id: Int) async{
-        guard let animal: Criatura = try? await BOTW_Api().descargar_criatura_individual(id: id) else {return}
-        self.criatura_animal = animal;
-    }*/
     
     //PRUEBA PARA DESCARGAR CRIATURA INDIVIDUAL
     

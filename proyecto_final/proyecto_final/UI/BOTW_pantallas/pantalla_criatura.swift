@@ -15,7 +15,6 @@ struct PantallaCriatura: View {
             NavigationStack{
                 ZStack(){
                     ScrollView{
-                        
                         //ESTE HSTACK LLEVA EL TITULO
                         HStack(){
                             Divider()
@@ -24,14 +23,13 @@ struct PantallaCriatura: View {
                                 .border(Color("ColorDorado"), width: 2)
 
                             Text("CRIATURAS")
-                            .font(Font.custom("The Wild Breath of Zelda", size:45))
-                            .foregroundStyle(Color("ColorDorado"))
+                                .font(Font.custom("The Wild Breath of Zelda", size:45))
+                                .foregroundStyle(Color("ColorDorado"))
                             
                             Divider()
                                 .frame(width: 50, height: 2)
                                 .border(Color("ColorDorado"), width: 2)
                         }
-
                         //ESTE MUESTRA TODAS LAS CRIATURAS
                         LazyVStack{
                             ForEach(controlador.pagina_resultados!.data){ criatura in NavigationLink{PantallaCriaturaIndividual()
@@ -58,7 +56,6 @@ struct PantallaCriatura: View {
                                         .shadow(color: Color.black, radius: 5, x: 0, y: 1)
                                         .padding(10)
                                         
-                                        
                                         VStack(alignment: .leading){
                                             Text("\(criatura.id)")
                                                 .font(Font.custom("The Wild Breath of Zelda", size: 20))
@@ -67,7 +64,6 @@ struct PantallaCriatura: View {
                                                 .font(Font.custom("The Wild Breath of Zelda", size: 34))
                                                 .foregroundStyle(Color("ColorOscuro"))
                                                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                                            
                                         }
                                         .frame(maxWidth: .infinity, maxHeight:
                                                 .infinity,alignment: .leading)
@@ -86,10 +82,12 @@ struct PantallaCriatura: View {
                             .padding(10)
                             .simultaneousGesture(TapGesture().onEnded({controlador.descargar_animal_api(id: criatura.id)
                             }))}
+                            .border(Color("ColorDorado"), width: 3)
+                            .padding(5)
+                            .border(Color("ColorDorado"), width: 3)
                             .background(Color("ColorCremaoscuro"))
                             .cornerRadius(5)
                         }
-                        
                     }
                 } // ESTE PARENTESIIS ES DE ZSTACK
                 .padding(20)

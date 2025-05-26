@@ -86,6 +86,9 @@ struct PantallaMonstruo: View {
                                 controlador.descargar_monstruo_api(id: monstruo.id)
                             }))
                             }
+                            .border(Color("ColorDorado"), width: 3)
+                            .padding(5)
+                            .border(Color("ColorDorado"), width: 3)
                             .background(Color("ColorCremaoscuro"))
                             .cornerRadius(5)
                         }

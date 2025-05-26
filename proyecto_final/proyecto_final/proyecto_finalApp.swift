@@ -11,7 +11,7 @@ import SwiftUI
 struct proyecto_finalApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuNavegacion()
         }
     }
 }

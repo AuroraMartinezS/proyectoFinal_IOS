@@ -41,7 +41,6 @@ struct PantallaPrincipal: View {
                             .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
                     
-                    
                     HStack(){
                         Image("ImgGaleria1")
                             .resizable()
@@ -73,18 +72,18 @@ struct PantallaPrincipal: View {
                     }
                     
                     Divider()
-                    .frame(width: 190, height: 2)
-                    .border(Color("ColorDorado"), width: 2)
-                    .padding(10)
+                        .frame(width: 190, height: 2)
+                        .border(Color("ColorDorado"), width: 2)
+                        .padding(10)
                     
                     //MODELO 3D
                     Text("¡Interactua con nuestro pequeño Korok!")
-                    .font(Font.custom("Poppins-Regular", size: 15))
-                    .bold()
-                    .foregroundStyle(Color("ColorOscuro"))
-                    .padding()
-                    .background(Color.white.opacity(0.5))
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .font(Font.custom("Poppins-Regular", size: 15))
+                        .bold()
+                        .foregroundStyle(Color("ColorOscuro"))
+                        .padding()
+                        .background(Color.white.opacity(0.5))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
                     
                     //ESTE DE ACA SIRVE PARA RENDERIZAR ESCENAS 3D.
                     //EL SCNSCENE CARGA UNA ESCENA 3D POR MEDIO DE UN ARCHIVO QUE LE PASEMOS.
@@ -92,19 +91,13 @@ struct PantallaPrincipal: View {
                     //allowCameraControl PERMITE CONTROLES AL USUARIO PARA HACER ZOOM, Y MOVIMENTO CON EL MOUSE
                     SceneView(scene: SCNScene(named: models[0].nombreModelo)
                               , options: [.autoenablesDefaultLighting, .allowsCameraControl])
-                    .frame(width: 320, height: 320)
-                    .border(Color("ColorDorado"), width: 3)
-                    .padding(5)
-                    .border(Color("ColorDorado"), width: 3)
-                    
-                    
-                    
-                    
+                        .frame(width: 320, height: 320)
+                        .border(Color("ColorDorado"), width: 3)
+                        .padding(5)
+                        .border(Color("ColorDorado"), width: 3)
                 }
                 .padding(20)
-                
             }
-
         }
         .background(LinearGradient(gradient: Gradient(colors: [Color("ColorClaro"), Color("ColorDorado")]), startPoint: .top, endPoint: .bottom)
             )
