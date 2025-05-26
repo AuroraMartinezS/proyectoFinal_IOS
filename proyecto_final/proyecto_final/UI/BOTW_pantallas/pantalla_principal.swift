@@ -32,20 +32,44 @@ struct PantallaPrincipal: View {
                     Text("HYRULE HAVEN")
                         .font(Font.custom("The Wild Breath of Zelda", size: 50))
                         .foregroundStyle(Color("ColorOscuro"))
-                    Text("Un pequeño rincón hyliano para aprender y conocer más sobre la fauna de Hyrule. ¡Aprende sobre todos los monstruos y animales que existen en todo el universo de BOTW!")
-                        .font(Font.custom("Poppins-Regular", size: 15))
-                        .foregroundStyle(Color("ColorOscuro"))
+                    ZStack(){
+                        Text("Un pequeño rincón hyliano para aprender y conocer más sobre la fauna de Hyrule. ¡Aprende sobre todos los monstruos y animales que existen en todo el universo de BOTW!")
+                            .font(Font.custom("Poppins-Regular", size: 15))
+                            .foregroundStyle(Color("ColorOscuro"))
+                            .padding()
+                            .background(Color.white.opacity(0.5))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
                     
-                    ZStack(alignment: .leading){
-                        Image("imagenInicio")
+                    
+                    HStack(){
+                        Image("ImgGaleria1")
                             .resizable()
                             .scaledToFit()
-                            .aspectRatio(contentMode: .fill)
+                            .aspectRatio(contentMode: .fit)
                             .cornerRadius(5)
                             .border(Color("ColorDorado"), width: 3)
                             .padding(5)
                             .border(Color("ColorDorado"), width: 3)
-                            .padding(10)
+                            .frame(height: 245)
+                        VStack(){
+                            Image("ImgGaleria2")
+                                .resizable()
+                                .scaledToFit()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(5)
+                                .border(Color("ColorDorado"), width: 3)
+                                .padding(5)
+                                .border(Color("ColorDorado"), width: 3)
+                            Image("ImgGaleria3")
+                                .resizable()
+                                .scaledToFit()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(5)
+                                .border(Color("ColorDorado"), width: 3)
+                                .padding(5)
+                                .border(Color("ColorDorado"), width: 3)
+                        }
                     }
                     
                     Divider()
@@ -56,8 +80,11 @@ struct PantallaPrincipal: View {
                     //MODELO 3D
                     Text("¡Interactua con nuestro pequeño Korok!")
                     .font(Font.custom("Poppins-Regular", size: 15))
-                    .italic()
+                    .bold()
                     .foregroundStyle(Color("ColorOscuro"))
+                    .padding()
+                    .background(Color.white.opacity(0.5))
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
                     
                     //ESTE DE ACA SIRVE PARA RENDERIZAR ESCENAS 3D.
                     //EL SCNSCENE CARGA UNA ESCENA 3D POR MEDIO DE UN ARCHIVO QUE LE PASEMOS.

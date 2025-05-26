@@ -41,8 +41,8 @@ struct PantallaMonstruosIndividual: View {
                             Image("CategoriaMonstruo")
                                 .resizable()
                                 .scaledToFill()
-                               .aspectRatio(contentMode: .fit)
-                               .frame(width: 60, height: 60)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 60, height: 60)
                             Text(" \(controlador.monstruo_individual?.data.category ?? "Categoria")")
                                 .foregroundStyle(Color("ColorAzulTxt"))
                                 .font(Font.custom("Poppins-Regular", size: 15))
@@ -79,7 +79,7 @@ struct PantallaMonstruosIndividual: View {
                                             Text("\(ubicacion)")
                                                 .foregroundStyle(Color("ColorAzulTxt"))
                                         }
-                                       
+                                        
                                     }
                                 }
                                 .padding(.top, 5)
@@ -91,6 +91,27 @@ struct PantallaMonstruosIndividual: View {
                             .bold()
                             .animation(.easeInOut, value: ubicaciones)
                         }
+                        
+                        if let drops = controlador.monstruo_individual?.data.drops {
+                            DisclosureGroup("Drop Items") {
+                                VStack(alignment: .leading) {
+                                    ForEach(drops, id: \.self) { objetos in
+                                        HStack(){
+                                            Image(systemName: "apple.meditate")
+                                            Text("\(objetos)")
+                                                .foregroundStyle(Color("ColorAzulTxt"))
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                            .background(Color.white.opacity(0.1))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .foregroundStyle(Color("ColorAzulMarino"))
+                            .bold()
+                            .animation(.easeInOut, value: drops)
+                        }
+                        
                     }
                     .padding(10)
                 }

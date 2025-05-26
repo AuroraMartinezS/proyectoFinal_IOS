@@ -93,6 +93,26 @@ struct PantallaCriaturaIndividual: View {
                             .animation(.easeInOut, value: ubicaciones)
                         }
                         
+                        if let drops = controlador.criatura_animal?.data.drops {
+                            DisclosureGroup("Drop Items") {
+                                VStack(alignment: .leading) {
+                                    ForEach(drops, id: \.self) { objetos in
+                                        HStack(){
+                                            Image(systemName: "apple.meditate")
+                                            Text("\(objetos)")
+                                                .foregroundStyle(Color("ColorFiltro"))
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                            .background(Color.white.opacity(0.1))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .foregroundStyle(Color("ColorDorado"))
+                            .bold()
+                            .animation(.easeInOut, value: drops)
+                        }
+                        
                     }
                     .padding(10)
                 }
