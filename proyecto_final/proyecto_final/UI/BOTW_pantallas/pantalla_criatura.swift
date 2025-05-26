@@ -16,6 +16,7 @@ struct PantallaCriatura: View {
                 ZStack(){
                     ScrollView{
                         
+                        //ESTE HSTACK LLEVA EL TITULO
                         HStack(){
                             Divider()
                                 .frame(width: 50, height: 2)
@@ -29,14 +30,14 @@ struct PantallaCriatura: View {
                             Divider()
                                 .frame(width: 50, height: 2)
                                 .border(Color("ColorDorado"), width: 2)
-
                         }
 
-
+                        //ESTE MUESTRA TODAS LAS CRIATURAS
                         LazyVStack{
                             ForEach(controlador.pagina_resultados!.data){ criatura in NavigationLink{PantallaCriaturaIndividual()
                             } label: {
                                 ZStack(){
+                                    //PARA EL PATRÓN DE FONDO
                                     Image("Patron1")
                                         .resizable()
                                         .scaledToFill()
@@ -68,7 +69,8 @@ struct PantallaCriatura: View {
                                                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                                             
                                         }
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .leading)
+                                        .frame(maxWidth: .infinity, maxHeight:
+                                                .infinity,alignment: .leading)
                                         
                                         Image(systemName: "chevron.right")
                                             .padding(15)
@@ -80,14 +82,10 @@ struct PantallaCriatura: View {
                                     .cornerRadius(5)
                                     
                                 } //ZSTACK
-                                
-                                
                             }
                             .padding(10)
-                            .simultaneousGesture(TapGesture().onEnded({
-                                controlador.descargar_animal_api(id: criatura.id)
-                            }))
-                            } .background(Color("ColorCremaclaro"))
+                            .simultaneousGesture(TapGesture().onEnded({controlador.descargar_animal_api(id: criatura.id)
+                            }))}
                             .background(Color("ColorCremaoscuro"))
                             .cornerRadius(5)
                         }
